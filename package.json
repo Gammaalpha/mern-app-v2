@@ -1,0 +1,33 @@
+{
+  "name": "mern-app-v2",
+  "version": "1.0.0",
+  "description": "MERN app built using typescript",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-install": "(cd server/ && npm install);",
+    "server-build": "npm run build --prefix server",
+    "server-copy": "cp -r ./server/build/* ./build/",
+    "server": "(cd server/ && npm run dev);",
+    "client": "(cd client/ && npm run start);",
+    "client-install": "(cd client/ && npm install);",
+    "client-build": "npm run build --prefix client",
+    "client-copy": "cp -r ./client/build ./build/client",
+    "install": "npm run server-install && npm run client-install",
+    "assetCopy": "mkdir build && cp -r ./deploy/* ./build && npm run server-copy && npm run client-copy",
+    "build": "rm -rf build/ && npm run server-build && npm run client-build && npm run assetCopy",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "(cd build/ && node server.bundle.js);",
+    "dev:prod": "cd ./server && npm run dev:prod"
+  },
+  "keywords": [
+    "MERN",
+    "Typescript"
+  ],
+  "author": "Faiq Malik",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "mern-app-v2-server",
+  "version": "1.0.0",
+  "description": "nodejs server for mern stack app",
+  "main": "server.js",
+  "scripts": {
+    "tsc": "rm -rf build/ && npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build/ && webpack --config webpack.config.js",
+    "start": "node build/server.js",
+    "dev": "nodemon app/server.ts",
+    "dev:prod": "SET NODE_ENV=production nodemon app/server.ts",
+    "debug": "cross-env NODE_ENV=production node build/server.js --inspect"
+  },
+  "keywords": [
+    "nodejs",
+    "mern",
+    "typescript"
+  ],
+  "author": "Faiq Malik",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^2.0.0",
+    "applicationinsights": "^1.8.5",
+    "body-parse": "^0.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.10.0",
+    "msal": "^1.4.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-azure-ad": "^4.2.1",
+    "simple-oauth2": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/runtime": "^7.12.1",
+    "@types/express": "^4.17.8",
+    "@types/express-session": "^1.17.0",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.10.1",
+    "@types/passport": "^1.0.4",
+    "@types/passport-azure-ad": "^4.0.7",
+    "@types/simple-oauth2": "^4.1.0",
+    "babel-loader": "^8.1.0",
+    "dotenv": "^8.2.0",
+    "node-loader": "^1.0.2",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
+  }
+}

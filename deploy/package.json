@@ -1,0 +1,20 @@
+{
+  "name": "mern-app-v2",
+  "version": "1.0.0",
+  "description": "MERN app built using typescript",
+  "main": "server.bundle.js",
+  "engines": {
+    "node": "12.18.0",
+    "npm": "6.14.4"
+  },
+  "scripts": {
+    "prestart": "npm i",
+    "start": "node server.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Faiq Malik",
+  "license": "ISC"
+}
