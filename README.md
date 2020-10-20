@@ -8,9 +8,12 @@ App template built with MongoDb, Express, React and Node with OAuth2 using passp
 
 WEBSITE_NODE_DEFAULT_VERSION="12.18.3"
 WEBSITE_HTTPLOGGING_RETENTION_DAYS="7"
+
 NODE_ENV="development"
+
 AZURE_TENANT_ID=""
 AZURE_CLIENT_ID=""
+
 AZURE_CLIENT_SECRET=""
 
 COSMOS_URI=""
