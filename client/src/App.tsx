@@ -151,7 +151,7 @@ function App(props: IApp) {
               login: () => signIn(),
               logout: () => signOut(),
               // accessToken: result.user.oauthToken.access_token,
-              expireAt: result.user.token.expires_at,
+              expireAt: result.user.oauthToken.expires_at,
               error: null
             })
           }
