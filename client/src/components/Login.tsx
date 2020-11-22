@@ -62,7 +62,7 @@ export default function Login() {
         return (
             <Paper>
                 <h1>
-                    Welcome to the Tracker Manager tool.
+                    Welcome to the MERN app with Azure AD auth tool.
                     </h1>
                 <form onSubmit={handleSubmit} autoComplete="off" className={classes.column}>
                     <div className={`${classes.column}`} >
@@ -82,7 +82,7 @@ export default function Login() {
         return (
             <Paper>
                 <h1>
-                    Welcome to the Tracker Manager tool. You have been authenticated.
+                    Welcome to the MERN app with Azure AD auth tool. You have been authenticated.
             </h1>
                 <form onSubmit={handleSubmit} autoComplete="off" className={classes.column}>
                     <div className={`${classes.column}`} >
